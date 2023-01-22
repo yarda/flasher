@@ -30,7 +30,7 @@ work correctly even with the lower R1, C1 values.
 - [Schematic KiCad](https://github.com/yarda/flasher/blob/master/flasher.kicad_sch)
 - [Schematic PDF](https://github.com/yarda/flasher/blob/master/flasher.pdf)
 
-[![Schematic PNG](assets/flasher.png "Flasher schematic")](https://github.com/yarda/flasher/blob/master/flasher.png)
+[![Schematic PNG](flasher.png "Flasher schematic")](https://github.com/yarda/flasher/blob/master/flasher.png)
 
 There is currently no PCB design because the reference design was hacked onto
 the original Chinese PCB (with the removed faulty Chinese ASIC). Feel free
