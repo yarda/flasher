@@ -37,7 +37,7 @@
 #include <xc.h>
 
 // CONFIG1
-#pragma config FOSC = INTOSC    //  (INTOSC oscillator; I/O function on CLKIN pin)
+#pragma config FOSC = INTOSC    // (INTOSC oscillator; I/O function on CLKIN pin)
 #pragma config WDTE = NSLEEP    // Watchdog Timer Enable (WDT enabled while running and disabled in Sleep)
 #pragma config PWRTE = ON       // Power-up Timer Enable (PWRT enabled)
 #pragma config MCLRE = OFF      // MCLR Pin Function Select (MCLR/VPP pin function is VPP)
