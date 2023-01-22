@@ -18,19 +18,21 @@ is cca. 20 mA. There is a constant current LED drive which fluctuates by
 cca. 1 mA which is not visible by the naked eye. The idle power consumption is
 very low (cca. 500 nA), thus it can stay in the stand-by (mode 0) on the coin
 cells for several years. It drives the LED by the PWM and can tolerate slight
-drop off of the supply voltage (battery discharge). The feedback loop senses
-the voltage on the sensing resistor R2 through the low pass HW filter R1, C1.
-The voltage is read by the ADC with the constant voltage reference, thus the
-sensed voltage corresponds to the current. The R1, C1 values aren't critical,
-I used what I had handy. The R1C1 time constant I used is probably a bit
-overrated wich resulted in a slow stabilization (de-stabilization) of the
-feedback loop (which is OK for a flasher operated from batteries). Thus it may
-work correctly even with the lower R1, C1 values.
+drop off of the supply voltage (battery discharge).
 
 - [Schematic KiCad](https://github.com/yarda/flasher/blob/master/flasher.kicad_sch)
 - [Schematic PDF](https://github.com/yarda/flasher/blob/master/flasher.pdf)
 
 [![Schematic PNG](flasher.png "Flasher schematic")](https://github.com/yarda/flasher/blob/master/flasher.png)
+
+The feedback loop senses the voltage on the sensing resistor R2 through the
+low pass HW filter R1, C1. The voltage is read by the ADC with the constant
+voltage reference, thus the sensed voltage corresponds to the current.
+The R1, C1 values aren't critical, I used what I had handy. The R1C1 time
+constant I used is probably a bit overrated wich resulted in a slow
+stabilization (de-stabilization) of the feedback loop (which is OK for the
+flasher operated from batteries). Thus it may work correctly even with the
+lower R1, C1 values.
 
 There is currently no PCB design because the reference design was hacked onto
 the original Chinese PCB (with the removed faulty Chinese ASIC). Feel free
