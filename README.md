@@ -27,8 +27,9 @@ overrated wich resulted in a slow stabilization (de-stabilization) of the
 feedback loop (which is OK for a flasher operated from batteries). Thus it may
 work correctly even with the lower R1, C1 values.
 
-[Schematic Kicad](https://github.com/yarda/flasher/flasher.kicad_sch)
-[Schematic PDF](https://github.com/yarda/flasher/flasher.pdf)
+[Schematic Kicad](https://github.com/yarda/flasher/blob/master/flasher.kicad_sch)
+
+[![Schematic](https://github.com/yarda/flasher/blob/master/flasher.pdf "Flasher schematic")](https://github.com/yarda/flasher/blob/master/flasher.pdf)
 
 There is currently no PCB design because the reference design was hacked onto
 the original Chinese PCB (with the removed faulty Chinese ASIC). Feel free
