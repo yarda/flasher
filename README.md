@@ -3,10 +3,15 @@ Description:
 
 This is an attempt to replace the broken Chinese LED driver with the custom
 design using PIC12F1572. It originally drove several LEDs built-in in the
-hood (cap). There are 3 modes of operation (4 if the "off" is also counted
-as the mode) that are switched via the push button (active low):
-Mode 0: off (stand-by); mode 1: blink 80 ms on, 80 ms off; mode 2: blink
-160 ms on, 160 ms off; mode 3: constant on.
+hood (cap). There are three modes of operation (four if the "off" is also
+counted as the mode) that are switched via the push button (active low):
+
+| Mode | Description                  |
+|------|------------------------------|
+| 0    | off (stand-by)               |
+| 1    | blink 80 ms on / 80 ms off   |
+| 2    | blink 160 ms on / 160 ms off |
+| 3    | constant on                  |
 
 Power supply is 4.5 V (three 1.5 V coin cells). The average LED current drive
 is cca. 20 mA. There is a constant current LED drive which fluctuates by
@@ -16,8 +21,11 @@ cells for several years. It drives the LED by the PWM and can tolerate slight
 drop off of the supply voltage (battery discharge). The feedback loop senses
 the voltage on the sensing resistor R2 through the low pass HW filter R1, C1.
 The voltage is read by the ADC with the constant voltage reference, thus the
-sensed voltage corresponds to the current. R1, C1 values aren't critical,
-I used what I had handy.
+sensed voltage corresponds to the current. The R1, C1 values aren't critical,
+I used what I had handy. The R1C1 time constant I used is probably a bit
+overrated wich resulted in a slow stabilization (de-stabilization) of the
+feedback loop (which is OK for a flasher operated from batteries). Thus it may
+work correctly even with the lower R1, C1 values.
 
 The build was tested with the Microchip MPLAB X.
 
